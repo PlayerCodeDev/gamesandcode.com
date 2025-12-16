@@ -1,0 +1,25 @@
+{
+  "name": "gamesandcode.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./css/input.css -o ./public/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PlayerCodeDev/gamesandcode.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PlayerCodeDev/gamesandcode.com/issues"
+  },
+  "homepage": "https://github.com/PlayerCodeDev/gamesandcode.com#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18"
+  }
+}
