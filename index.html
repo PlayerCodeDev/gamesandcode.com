@@ -4,116 +4,176 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Games & Code</title>
-  <meta name="description" content="Games & Code ofrece servicios profesionales de desarrollo de software y desarrollo web. Soluciones modernas, escalables y confiables.">
-  <!-- <link href="./public/output.css" rel="stylesheet"> -->
+  <meta name="description" content="Games & Code ofrece servicios profesionales
+   de desarrollo de software y desarrollo web. Soluciones modernas, escalables
+   y confiables.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="./public/output.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <div>
-      <p>Games & Code</p>
 
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <header class="fixed top-0 left-0 right-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
       <nav>
-        <ul>
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#us">Nosotros</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
+        <div class="max-w-7xl px-6 py-4 mx-auto flex items-center justify-between">
+
+          <!-- Logo -->
+          <a href="#home" class="group flex items-center gap-2 font-display">
+            <div class="p-2 rounded-md bg-[hsl(var(--color-primary)/.1)] group-hover:bg-[hsl(var(--color-primary)/.2)] transition duration-200 ease-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-6 h-6 text-[hsl(var(--color-primary))]">
+                <path d="m18 16 4-4-4-4"></path>
+                <path d="m6 8-4 4 4 4"></path>
+                <path d="m14.5 4-5 16"></path>
+              </svg>
+            </div>
+
+            <span class="font-outfit text-2xl font-bold tracking-tight">
+              Games &
+              <span class="text-gradient">Code</span>
+            </span>
+          </a>
+
+          <div class="flex gap-8">
+            <!-- Desktop menu -->
+            <ul class="font-inter hidden md:flex items-center gap-8">
+              <li><a href="#home" class="hover:text-white transition duration-300 hover-underline">Inicio</a></li>
+              <li><a href="#services" class="hover:text-white transition duration-300 hover-underline">Servicios</a></li>
+              <li><a href="#us" class="hover:text-white transition duration-300 hover-underline">Nosotros</a></li>
+              <li><a href="#contact" class="hover:text-white transition duration-300 hover-underline">Contacto</a></li>
+            </ul>
+            <a
+              href="#contact"
+              class="hidden md:inline-flex items-center justify-center rounded-md bg-[hsl(var(--color-primary))] px-4 py-2 text-sm font-medium text-[hsl(var(--color-bg))] hover:bg-[hsl(var(--color-primary)/.9)] transition duration-200 ease-hover"
+            >
+              Empezar Proyecto
+            </a>
+            <!-- Mobile button -->
+            <button class="md:hidden text-slate-100" aria-label="Abrir menú">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
+    <main>
 
-    <section id="home">
-      <h1>Transformamos tus ideas en soluciones digitales</h1>
-      <p>Somos un equipo creativo y confiable especializado en el desarrollo de
-         software y páginas web profesionales que impulsan el crecimiento de tu
-         negocio.
-      </p>
-      <button>Iniciar Proyecto</button>
-      <button>Ver Nuestro Trabajo</button>
-    </section>
+      <section id="home" class="py-24">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+          Transformamos tus ideas en soluciones digitales
+        </h1>
 
-    <section id="services">
-      <p><strong>NUESTROS SERVICIOS</strong></p>
-      
-      <h2>Soluciones que impulsan tu éxito</h2>
-      
-      <p>Ofrecemos servicios integrales de desarrollo de software para llevar tu
-         negocio al siguiente nivel.</p>
-      
-      <article>
-        <h3>Desarrollo Web</h3>
-        <p>Creamos sitios web modernos, responsivos y optimizados que convierten
-           visitantes en clientes.</p>
-      </article>
+        <p class="mt-6 max-w-2xl">
+          Somos un equipo creativo y confiable especializado en el desarrollo de
+          software y páginas web profesionales que impulsan el crecimiento de tu
+          negocio.
+        </p>
+        
+        <button>Iniciar Proyecto</button>
+        
+        <button>Ver Nuestro Trabajo</button>
+      </section>
 
-      <article>
-        <h3>Software a Medida</h3>
-        <p>Soluciones personalizadas que automatizan procesos y mejoran la
-           eficiencia de tu negocio.</p>
-      </article>
-    </section>
+      <section id="services" class="py-20 border-t border-slate-800">
+        <p><strong>NUESTROS SERVICIOS</strong></p>
+        
+        <h2 class="text-3xl font-semibold">Soluciones que impulsan tu éxito</h2>
 
-    <section id="us">
-      <p><strong>¿POR QUÉ ELEGIRNOS?</strong></p>
+        <p>
+          Ofrecemos servicios integrales de desarrollo de software para llevar tu
+          negocio al siguiente nivel.
+        </p>
 
-      <h2>Tu socio tecnológico de confianza</h2>
+        <article>
 
-      <p>En Games & Code combinamos creatividad, experiencia técnica y pasión
-         por la innovación para crear soluciones digitales que realmente marcan
-         la diferencia en tu negocio.
-      </p>
+          <h3>Desarrollo Web</h3>
 
-      <ul>
-        <li>Comunicación transparente en cada etapa</li>
-        <li>Tecnologías modernas y escalables</li>
-        <li>Precios competitivos y justos</li>
-        <li>Soluciones personalizadas a tu medida</li>
-        <li>Soporte técnico post-lanzamiento</li>
-        <li>Garantía de satisfacción total</li>
-      </ul>
+          <p>
+            Creamos sitios web modernos, responsivos y optimizados que convierten
+            visitantes en clientes.
+          </p>
+        
+        </article>
 
-      <article>
-        <h4>Equipo Comprometido</h4>
-        <p>Desarrolladores con el objetivo de ayudar en el desarrollo de tu negocio.</p>
-      </article>
+        <article>
+        
+          <h3>Software a Medida</h3>
+          
+          <p>
+            Soluciones personalizadas que automatizan procesos y mejoran la
+            eficiencia de tu negocio.
+          </p>
+        
+        </article>
+      </section>
 
-      <article>
-        <h4>Entrega Rápida</h4>
-        <p>Metodologías ágiles para entregas incrementales que aseguran la calidad.</p>
-      </article>
+      <section id="us" class="py-20">
+        <p><strong>¿POR QUÉ ELEGIRNOS?</strong></p>
 
-      <article>
-        <h4>Calidad Premium</h4>
-        <p>Código limpio, escalable y con las mejores prácticas del mercado.</p>
-      </article>
-    </section>
+        <h2>Tu socio tecnológico de confianza</h2>
 
-    <section id="contact">
+        <p>En Games & Code combinamos creatividad, experiencia técnica y pasión
+          por la innovación para crear soluciones digitales que realmente marcan
+          la diferencia en tu negocio.
+        </p>
 
-      <p><strong>¿LISTO PARA EMPEZAR?</strong></p>
+        <ul>
+          <li>Comunicación transparente en cada etapa</li>
+          <li>Tecnologías modernas y escalables</li>
+          <li>Precios competitivos y justos</li>
+          <li>Soluciones personalizadas a tu medida</li>
+          <li>Soporte técnico post-lanzamiento</li>
+          <li>Garantía de satisfacción total</li>
+        </ul>
 
-      <h2>Hagamos realidad tu proyecto</h2>
+        <article>
+          <h4>Equipo Comprometido</h4>
+          <p>Desarrolladores con el objetivo de ayudar en el desarrollo de tu negocio.</p>
+        </article>
 
-      <p>Cuéntanos tu idea y te ayudamos a convertirla en una solución digital
-         exitosa. La primera consulta es completamente gratis.
-      </p>
+        <article>
+          <h4>Entrega Rápida</h4>
+          <p>Metodologías ágiles para entregas incrementales que aseguran la calidad.</p>
+        </article>
 
-      <button>Solicita Cotización</button>
-      <button>Agendar Llamada</button>
+        <article>
+          <h4>Calidad Premium</h4>
+          <p>Código limpio, escalable y con las mejores prácticas del mercado.</p>
+        </article>
+      </section>
 
-      <p>contacto@gamesandcode.com</p>
-      <p>+56912345678</p>
-      <p>WhatsApp</p>
-    </section>
+      <section id="contact" class="py-20 border-t border-slate-800">
 
-  </main>
+        <p><strong>¿LISTO PARA EMPEZAR?</strong></p>
 
-  <footer>
-    <p>Games & Code</p>
-    <p>Redes sociales</p>
-  </footer>
-</body>
+        <h2>Hagamos realidad tu proyecto</h2>
+
+        <p>Cuéntanos tu idea y te ayudamos a convertirla en una solución digital
+          exitosa. La primera consulta es completamente gratis.
+        </p>
+
+        <button>Solicita Cotización</button>
+        <button>Agendar Llamada</button>
+
+        <p>contacto@gamesandcode.com</p>
+        <p>+56912345678</p>
+        <p>WhatsApp</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Games & Code</p>
+      <p>Redes sociales</p>
+    </footer>
+  </body>
 </html>
