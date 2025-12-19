@@ -10,13 +10,17 @@
 
 @layer base {
   :root {
-    --color-primary: 216 90% 59%;
+    --color-primary: 216 91% 60%;
     --color-bg: 216 32% 16%;
     --color-bg-blur: 216 32% 16%;
     --color-text: 210 33% 97%;
     --color-gradient-from: var(--color-primary);
     --color-gradient-to: 198 89% 47%;
     --color-muted-foreground: 215 20% 64%;
+    --color-glow-primary: 217 91% 60%;
+    --color-border: 217 32% 17%;
+    --color-card: 222 47% 8%;
+    --color-bg-body: 222 47% 6%;
   }
 }
 
@@ -32,6 +36,13 @@
     color: transparent;
   }
 
+  .glass {
+    background-color: hsl(var(--color-card) / 0.5);
+    --tw-backdrop-blur: blur(24px);
+    backdrop-filter: var(--tw-backdrop-blur);
+    border-width: 1px;
+    border-color: hsl(var(--color-border) / 0.5);
+  }
   .hover-underline {
     position: relative;
     color: hsl(var(--color-muted-foreground));
@@ -57,5 +68,52 @@
 
   .hover-underline:hover::after {
     transform: scaleX(1);
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 40px hsl(var(--color-glow-primary) / 0.3),
+      0 0 80px hsl(var(--color-glow-primary) / 0.15);
+  }
+
+  .bg-hero-gradient {
+    background-image: linear-gradient(
+      135deg,
+      rgba(60, 131, 246, 0.1),
+      rgba(13, 162, 231, 0.05)
+    );
+  }
+
+  .bg-hero-grid {
+    background-image: linear-gradient(
+        hsl(var(--color-primary)) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, hsl(var(--color-primary)) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline-none
+    focus-visible:ring-2
+    focus-visible:ring-[hsl(var(--color-primary))]
+    focus-visible:ring-offset-2
+    focus-visible:ring-offset-[hsl(var(--color-bg))];
+  }
+}
+
+@layer utilities {
+  .animation-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
   }
 }
