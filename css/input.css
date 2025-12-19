@@ -6,6 +6,7 @@
   --font-inter: "Inter", sans-serif;
   --font-outfit: "Outfit", sans-serif;
   --ease-hover: cubic-bezier(0.4, 0, 0.2, 1);
+  --tw-gradient-stops: ;
 }
 
 @layer base {
@@ -14,6 +15,7 @@
     --color-bg: 216 32% 16%;
     --color-bg-blur: 216 32% 16%;
     --color-text: 210 33% 97%;
+    --color-text-foreground: 210 40% 98%;
     --color-gradient-from: var(--color-primary);
     --color-gradient-to: 198 89% 47%;
     --color-muted-foreground: 215 20% 64%;
@@ -36,6 +38,9 @@
     color: transparent;
   }
 
+  .text-muted-foragrund {
+    color: hsl(var(--color-muted-foreground));
+  }
   .glass {
     background-color: hsl(var(--color-card) / 0.5);
     --tw-backdrop-blur: blur(24px);
@@ -43,6 +48,19 @@
     border-width: 1px;
     border-color: hsl(var(--color-border) / 0.5);
   }
+
+  .glass-hover {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.3s;
+    animation-duration: 0.3s;
+  }
+
+  .glass-hover:hover {
+    border-color: hsl(var(--color-primary) / 0.3);
+    background-color: hsl(var(--color-card) / 0.7);
+  }
+
   .hover-underline {
     position: relative;
     color: hsl(var(--color-muted-foreground));
@@ -98,6 +116,19 @@
     focus-visible:ring-[hsl(var(--color-primary))]
     focus-visible:ring-offset-2
     focus-visible:ring-offset-[hsl(var(--color-bg))];
+  }
+
+  .from-background {
+    --tw-gradient-from: hsl(var(--color-bg-body));
+  }
+
+  .to-background {
+    --tw-gradient-to: hsl(var(var(--color-bg-body)));
+  }
+
+  .via-muted {
+    --tw-gradient-stops: var(--tw-gradient-from), hsl(var(--color-border) / 0.2),
+      var(--tw-gradient-to);
   }
 }
 

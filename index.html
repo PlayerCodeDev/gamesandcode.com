@@ -12,7 +12,7 @@
   <link href="./public/output.css" rel="stylesheet">
 </head>
 
-  <body class="bg-[hsl(var(--color-bg-body))] text-[hsl(var(--color-text))] antialiased">
+  <body class="bg-[hsl(var(--color-bg-body))] text-[hsl(var(--color-text))] antialiased font-inter">
     <header class="glass fixed top-0 left-0 right-0 z-50 border-b border-[hsl(var(--color-border))]">
       <nav>
         <div class="max-w-7xl px-6 py-4 mx-auto flex items-center justify-between">
@@ -86,7 +86,7 @@
                 <path d="M4 17v2"></path>
                 <path d="M5 18H3"></path>
               </svg>
-              <span class="text-sm text-[hsl(var(--color-muted-foreground))]">
+              <span class="text-sm text-muted-foragrund">
                 Desarrollo de Software Profesional
               </span>
             </div>
@@ -105,7 +105,7 @@
             </h1>
           
 
-            <p class="font-inter text-lg md:text-xl text-[hsl(var(--color-muted-foreground))] mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p class="font-inter text-lg md:text-xl text-muted-foragrund mb-10 max-w-2xl mx-auto leading-relaxed">
               Somos un equipo creativo y confiable especializado en el desarrollo de software y páginas web profesionales que impulsan el crecimiento de tu negocio.
             </p>
             
@@ -126,37 +126,65 @@
         </div>
       </section>
 
-      <section id="services" class="py-20 border-t border-slate-800">
-        <p><strong>NUESTROS SERVICIOS</strong></p>
-        
-        <h2 class="text-3xl font-semibold">Soluciones que impulsan tu éxito</h2>
+      <section id="services" class="py-20 relative">
+        <div class="absolute inset-0 bg-linear-to-b from-background via-muted to-background"></div>
+        <div class="container mx-auto px-6 relative z-10">
+          <div class="text-center mb-16">
+            <p class="text-[hsl(var(--color-primary))] font-medium text-sm uppercase tracking-wider">
+              <strong>Nuestros Servicios</strong>
+            </p>
+            
+            <h2 class="text-3xl md:text-5xl font-outfit font-bold mt-4 mb-6">
+              Soluciones que impulsan tu
+              <span class="text-gradient">éxito</span>
+            </h2>
 
-        <p>
-          Ofrecemos servicios integrales de desarrollo de software para llevar tu
-          negocio al siguiente nivel.
-        </p>
+            <p class="text-muted-foragrund max-w-2xl mx-auto">
+              Ofrecemos servicios integrales de desarrollo de software para llevar tu
+              negocio al siguiente nivel.
+            </p>
+          </div>
 
-        <article>
+          <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <article class="group">
+              <div class="h-full w-full p-8 rounded-2xl glass glass-hover cursor-pointer">
+                <div class="w-14 h-14 rounded-xl bg-[hsl(var(--color-primary)/.1)] flex items-center justify-center mb-6 group-hover:bg-[hsl(var(--color-primary)/.2)] transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-7 h-7 text-[hsl(var(--color-primary))]">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-outfit font-semibold mb-3">Desarrollo Web</h3>
 
-          <h3>Desarrollo Web</h3>
+                <p class="text-muted-foragrund leading-relaxed">
+                  Creamos sitios web modernos, responsivos y optimizados que convierten
+                  visitantes en clientes.
+                </p>
+              </divh-full>
+            </article>
 
-          <p>
-            Creamos sitios web modernos, responsivos y optimizados que convierten
-            visitantes en clientes.
-          </p>
-        
-        </article>
+            <article class="group">
 
-        <article>
-        
-          <h3>Software a Medida</h3>
-          
-          <p>
-            Soluciones personalizadas que automatizan procesos y mejoran la
-            eficiencia de tu negocio.
-          </p>
-        
-        </article>
+              <div class="h-full p-8 rounded-2xl glass glass-hover cursor-pointer">
+                <div class="w-14 h-14 rounded-xl bg-[hsl(var(--color-primary)/.1)] flex items-center justify-center mb-6 group-hover:bg-[hsl(var(--color-primary)/.2)] transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database w-7 h-7 text-[hsl(var(--color-primary))]">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                    <path d="M3 12A9 3 0 0 0 21 12"></path>
+                  </svg>
+                </div>
+            
+                <h3 class="text-xl font-outfit font-semibold mb-3">Software a Medida</h3>
+                
+                <p class="text-muted-foragrund leading-relaxed">
+                  Soluciones personalizadas que automatizan procesos y mejoran la
+                  eficiencia de tu negocio.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section id="us" class="py-20">
