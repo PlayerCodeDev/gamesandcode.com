@@ -38,7 +38,7 @@
     color: transparent;
   }
 
-  .text-muted-foragrund {
+  .text-muted-foreground {
     color: hsl(var(--color-muted-foreground));
   }
   .glass {
