@@ -51,16 +51,35 @@
               Iniciar Proyecto
             </a>
             <!-- Mobile button -->
-            <button class="md:hidden text-slate-100" aria-label="Abrir menú">
+            <button class="md:hidden text-[hsl(var(--color-text-foreground))]" aria-label="Abrir menú" id="mobile-menu-button" aria-expanded="false">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="transition-all duration-300 ease-out rotate-0 scale-100" id="icon-menu">
                 <line x1="4" x2="20" y1="12" y2="12"></line>
                 <line x1="4" x2="20" y1="6" y2="6"></line>
                 <line x1="4" x2="20" y1="18" y2="18"></line>
               </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x hidden transition-all duration-300 ease-out rotate-90 scale-75" id="icon-close">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+              </svg>
             </button>
-          </div>
+            </div>
+        </div>
+        <div class="md:hidden mt-4 pb-4 hidden opacity-0 scale-95 px-6 transition-all duration-1000 origin-top ease-out" id="mobile-menu">
+          <ul class="font-inter flex flex-col gap-4">
+            <li><a href="#home" class="mobile-link hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">Inicio</a></li>
+            <li><a href="#services" class="mobile-link hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">Servicios</a></li>
+            <li><a href="#us" class="mobile-link hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">Nosotros</a></li>
+            <li><a href="#contact" class="mobile-link hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">Contacto</a></li>
+          </ul>
+          <a
+            href="#contact"
+            class="mobile-link mt-4 focus-ring glow-primary inline-flex items-center justify-center whitespace-nowrap rounded-xl bg-[hsl(var(--color-primary))] h-10 px-4 py-2 text-sm font-bold text-[hsl(var(--color-bg))] hover:bg-[hsl(var(--color-primary)/.9)] transition duration-200 ease-hover w-full">
+            Iniciar Proyecto
+          </a>
         </div>
       </nav>
     </header>
@@ -120,8 +139,6 @@
 
               <!-- <button>Ver Nuestro Trabajo</button> -->
             </div>
-            
-
           </div>
         </div>
       </section>
@@ -376,5 +393,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
