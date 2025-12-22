@@ -202,6 +202,9 @@
   }
 }
 @layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
   .absolute {
     position: absolute;
   }
@@ -231,6 +234,9 @@
   }
   .bottom-1\/4 {
     bottom: calc(1/4 * 100%);
+  }
+  .bottom-6 {
+    bottom: calc(var(--spacing) * 6);
   }
   .-left-32 {
     left: calc(var(--spacing) * -32);
@@ -273,12 +279,6 @@
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
-  }
-  .mt-16 {
-    margin-top: calc(var(--spacing) * 16);
-  }
-  .mt-32 {
-    margin-top: calc(var(--spacing) * 32);
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
@@ -355,50 +355,8 @@
   .h-full {
     height: 100%;
   }
-  .max-h-11\/12 {
-    max-height: calc(11/12 * 100%);
-  }
-  .min-h-4\/5 {
-    min-height: calc(4/5 * 100%);
-  }
-  .min-h-5\/6 {
-    min-height: calc(5/6 * 100%);
-  }
-  .min-h-11\/12 {
-    min-height: calc(11/12 * 100%);
-  }
-  .min-h-\[11\/12\] {
-    min-height: 11/12;
-  }
-  .min-h-\[80vh\] {
-    min-height: 80vh;
-  }
-  .min-h-\[89vh\] {
-    min-height: 89vh;
-  }
-  .min-h-\[90\%\] {
-    min-height: 90%;
-  }
-  .min-h-\[90\] {
-    min-height: 90;
-  }
-  .min-h-\[90vh\] {
-    min-height: 90vh;
-  }
-  .min-h-\[95\%\] {
-    min-height: 95%;
-  }
-  .min-h-\[95vh\] {
-    min-height: 95vh;
-  }
-  .min-h-\[99vh\] {
-    min-height: 99vh;
-  }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .min-h-svh {
-    min-height: 100svh;
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
@@ -470,17 +428,8 @@
   .rotate-0 {
     rotate: 0deg;
   }
-  .rotate-10 {
-    rotate: 10deg;
-  }
   .rotate-90 {
     rotate: 90deg;
-  }
-  .rotate-170 {
-    rotate: 170deg;
-  }
-  .rotate-179 {
-    rotate: 179deg;
   }
   .rotate-180 {
     rotate: 180deg;
@@ -703,6 +652,9 @@
   }
   .opacity-0 {
     opacity: 0%;
+  }
+  .opacity-70 {
+    opacity: 70%;
   }
   .opacity-\[0\.03\] {
     opacity: 0.03;
@@ -991,6 +943,17 @@
     }
     50% {
       transform: translateY(-10px);
+    }
+  }
+  .animation-float-scroll-indicator {
+    animation: float-scroll 3s ease-in-out infinite;
+  }
+  @keyframes float-scroll {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
     }
   }
 }

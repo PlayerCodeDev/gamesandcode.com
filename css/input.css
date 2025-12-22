@@ -147,4 +147,19 @@
       transform: translateY(-10px);
     }
   }
+
+  .animation-float-scroll-indicator {
+    animation: float-scroll 3s ease-in-out infinite;
+  }
+
+  @keyframes float-scroll {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
 }

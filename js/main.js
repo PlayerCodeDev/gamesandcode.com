@@ -3,6 +3,7 @@ const mobileMenu = document.getElementById('mobile-menu');
 const iconMenu = document.getElementById('icon-menu');
 const iconClose = document.getElementById('icon-close');
 const mobileLinks = document.querySelectorAll('.mobile-link');
+const scrollIndicator = document.getElementById('scroll-indicator');
 
 function closeMobileMenu() {
   mobileMenu.classList.add('opacity-0', 'scale-95');
@@ -58,3 +59,21 @@ mobileLinks.forEach(link => {
     }
   });
 });
+
+if (scrollIndicator) {
+  const SCROLL_TRESHOLD = 50;
+
+  function handleScrollIndicator() {
+    if (window.scrollY < SCROLL_TRESHOLD) {
+      scrollIndicator.classList.remove('opacity-0');
+      scrollIndicator.classList.add('opacity-70');
+    } else {
+      scrollIndicator.classList.remove('opacity-70');
+      scrollIndicator.classList.add('opacity-0');
+    }
+  }
+
+  handleScrollIndicator();
+
+  window.addEventListener('scroll', handleScrollIndicator, { passive: true })
+}
