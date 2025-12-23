@@ -6,7 +6,7 @@
   --font-inter: "Inter", sans-serif;
   --font-outfit: "Outfit", sans-serif;
   --ease-hover: cubic-bezier(0.4, 0, 0.2, 1);
-  --tw-gradient-stops: ;
+  --breakpoint-md: 1024px;
 }
 
 @layer base {

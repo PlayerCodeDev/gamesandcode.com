@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,12 +61,12 @@
             <ul class="font-inter hidden md:flex items-center gap-8">
               <li><a href="#home" class="hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">Inicio</a></li>
               <li><a href="#services" class="hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">Servicios</a></li>
+              <li><a href="#prices" class="hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">Precios</a></li>
               <li><a href="#us" class="hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">Nosotros</a></li>
+              <li><a href="#contact" class="hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">FAQ</a></li>
               <li><a href="#contact" class="hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">Contacto</a></li>
             </ul>
-            <a
-              href="#contact"
-              class="focus-ring glow-primary hidden md:inline-flex items-center justify-center rounded-xl bg-[hsl(var(--color-primary))] h-10 px-4 py-2 text-sm font-bold text-[hsl(var(--color-bg))] hover:bg-[hsl(var(--color-primary)/.9)] transition duration-200 ease-hover"
+            <a href="#contact" class="focus-ring glow-primary hidden md:inline-flex items-center justify-center rounded-xl bg-[hsl(var(--color-primary))] h-10 px-4 py-2 text-sm font-bold text-[hsl(var(--color-bg))] hover:bg-[hsl(var(--color-primary)/.9)] transition duration-200 ease-hover"
             >
               Iniciar Proyecto
             </a>
@@ -92,7 +92,9 @@
           <ul class="font-inter flex flex-col gap-4">
             <li><a href="#home" class="mobile-link hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">Inicio</a></li>
             <li><a href="#services" class="mobile-link hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">Servicios</a></li>
+            <li><a href="#prices" class="mobile-link hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">Precios</a></li>
             <li><a href="#us" class="mobile-link hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">Nosotros</a></li>
+            <li><a href="#contact" class="mobile-link hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">FAQ</a></li>
             <li><a href="#contact" class="mobile-link hover:text-[hsl(var(--color-text))] transition duration-300 hover-underline font-medium">Contacto</a></li>
           </ul>
           <a
@@ -164,11 +166,8 @@
 
         <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-muted-foreground opacity-70 pointer-events-none" id="scroll-indicator">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="56" viewBox="0 0 32 56" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="animation-float-scroll-indicator">
-            <!-- Mouse -->
             <rect x="4" y="2" width="24" height="40" rx="12" />
             <line x1="16" y1="10" x2="16" y2="18" />
-
-            <!-- Flecha -->
             <polyline points="8 46 16 54 24 46" />
           </svg>
         </div>
@@ -194,7 +193,7 @@
             </p>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <article class="group">
               <div class="h-full w-full p-8 rounded-2xl glass glass-hover cursor-pointer">
                 <div class="w-14 h-14 rounded-xl bg-[hsl(var(--color-primary)/.1)] flex items-center justify-center mb-6 group-hover:bg-[hsl(var(--color-primary)/.2)] transition-colors">
@@ -232,7 +231,266 @@
                 </p>
               </div>
             </article>
+
+            <article class="group md:col-span-2 lg:col-span-1">
+              <div class="h-full w-full p-8 rounded-2xl glass glass-hover cursor-pointer md:">
+                <div class="w-14 h-14 rounded-xl bg-[hsl(var(--color-primary)/.1)] flex items-center justify-center mb-6 group-hover:bg-[hsl(var(--color-primary)/.2)] transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-7 h-7 text-[hsl(var(--color-primary))]">
+                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                    <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-outfit font-semibold mb-3">Optimización</h3>
+
+                <p class="text-muted-foreground leading-relaxed">
+                  Mejoramos el rendimiento y velocidad de tus aplicaciones.
+                </p>
+              </div>
+            </article>
+
           </div>
+        </div>
+      </section>
+
+      <section id="prices" class="py-20 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-125 h-125 bg-[hsl(var(--color-glow-primary)/.05)] rounded-full blur-3xl"></div>
+        <div class="container mx-auto px-6 relative z-10">
+          <div class="text-center mb-16">
+            <p class="font-medium text-sm uppercase tracking-wider text-[hsl(var(--color-primary))]">
+              <strong>precios</strong>
+            </p>
+            <h2 class="text-3xl md:text-5xl font-outfit font-bold mt-4 mb-4">
+              Planes que se adaptan a
+              <span class="text-gradient">tu proyecto</span>
+            </h2>
+            <p class="text-muted-foreground max-w-2xl mx-auto">
+              Elige el plan que mejor se ajuste a tus necesidades. Todos incluyen diseño profesional y código de calidad.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+            <article class="flex flex-col gap-6 p-6 rounded-2xl glass glass-hover cursor-pointer group">
+              <div class="flex items-center gap-6 mb-4">
+                <div class="w-14 h-14 rounded-xl bg-[hsl(var(--color-primary)/.1)] flex items-center justify-center group-hover:bg-[hsl(var(--color-primary)/.2)] transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-6 h-6 text-[hsl(var(--color-primary))]">
+                    <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-outfit font-bold">Starter</h3>
+              </div>
+              <p class="text-muted-foreground mb-6">
+                Ideal para negocios que quieran comienzar su crecimiento digital con una solución web funcional y profesional.
+              </p>
+              <div class="mb-8">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="text-lg text-muted-foreground line-through">$200.000</span>
+                  <span class="bg-[hsl(var(--color-primary)/.2)] text-[hsl(var(--color-primary))] text-xs font-semibold px-2 py-0.5 rounded-full">-20%</span>
+                </div>
+                <span class="text-4xl font-bold">$150.000</span>
+                <span class="text-muted-foreground ml-2">CLP</span>
+              </div>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Landing page profesional</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Hasta 5 secciones</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Diseño responsive</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Opciones para contacto</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Asesoría en dominio y hosting</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Soporte básico</span>
+                </li>
+              </ul>
+
+              <div>
+                <a href="https://wa.me/56974219332?text=Hola%20¡tengo%20un%20proyecto%20en%20mente%20y%20el%20plan%20Starter%20creo%20que%20seria%20el%20indicado!" target="_blank" class="h-14 rounded-xl bg-[hsl(var(--color-primary)/.1)] flex items-center justify-center hover:bg-[hsl(var(--color-primary)/.2)] transition-colors text-[hsl(var(--color-primary))] font-bold focus-ring disabled:pointer-events-none disabled:opacity-50">
+                  Iniciar Proyecto Starter
+                </a>
+              </div>
+            </article>
+
+            <article class="relative flex flex-col gap-6 p-6 rounded-2xl glass glass-hover cursor-pointer group bg-[hsl(var(--color-primary)/.1)] border-[hsl(var(--color-primary)/.3)]">
+              <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+                <span class="bg-[hsl(var(--color-primary))] text-[hsl(var(--color-bg))] text-sm font-medium px-4 py-1 rounded-full">
+                  Más Popular
+                </span>
+              </div>
+              <div class="flex items-center gap-6 mb-4">
+                <div class="w-14 h-14 rounded-xl bg-[hsl(var(--color-primary)/.1)] flex items-center justify-center group-hover:bg-[hsl(var(--color-primary)/.2)] transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-6 h-6 text-[hsl(var(--color-primary))]">
+                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                    <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-outfit font-bold">Emprendedor</h3>
+              </div>
+              <p class="text-muted-foreground mb-6">
+                Ideal para emprendedores que quieran llevar su negocio al siguiente nivel, con una presencia digital más completa y estratégica junto a una solución web más robusta.
+              </p>
+              <div class="mb-8">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="text-lg text-muted-foreground line-through">$500.000</span>
+                  <span class="bg-[hsl(var(--color-primary)/.2)] text-[hsl(var(--color-primary))] text-xs font-semibold px-2 py-0.5 rounded-full">-20%</span>
+                </div>
+                <span class="text-4xl font-bold">$400.000</span>
+                <span class="text-muted-foreground ml-2">CLP</span>
+              </div>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Sitio web profesional y escalable</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Hasta 5 páginas personalizables</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Diseño responsive</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Contacto directo y redes sociales</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">SEO y Analytics</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Opción tienda Online</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Plugins premium (GPL)</span>
+                </li>
+              </ul>
+
+              <div>
+                <a href="https://wa.me/56974219332?text=Hola%20¡tengo%20un%20proyecto%20en%20mente%20y%20el%20plan%20Emprendedor%20creo%20que%20seria%20el%20indicado!" target="_blank" class="h-14 rounded-xl bg-[hsl(var(--color-primary)/.7)] flex items-center justify-center hover:bg-[hsl(var(--color-primary))] transition-colors text-[hsl(var(--color-bg))] font-bold focus-ring disabled:pointer-events-none disabled:opacity-50">
+                  Iniciar Proyecto Emprendedor
+                </a>
+              </div>
+              
+            </article>
+
+            <article class="flex flex-col gap-6 p-6 rounded-2xl glass glass-hover cursor-pointer group">
+              <div class="flex items-center gap-6 mb-4">
+                <div class="w-14 h-14 rounded-xl bg-[hsl(var(--color-primary)/.1)] flex items-center justify-center group-hover:bg-[hsl(var(--color-primary)/.2)] transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 w-6 h-6 text-[hsl(var(--color-primary))]">
+                    <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                    <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                    <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                    <path d="M10 6h4"></path>
+                    <path d="M10 10h4"></path>
+                    <path d="M10 14h4"></path>
+                    <path d="M10 18h4"></path>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-outfit font-bold">Profesional
+              </div>
+              <p class="text-muted-foreground mb-6">
+                Ideal para pequeñas y medianas empresas que quieran una solición digital robusta, escalable y alineada a sus objetivos de negocio.
+              </p>
+              <div class="mb-8">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="text-lg text-muted-foreground line-through">$800.000</span>
+                  <span class="bg-[hsl(var(--color-primary)/.2)] text-[hsl(var(--color-primary))] text-xs font-semibold px-2 py-0.5 rounded-full">-20%</span>
+                </div>
+                <span class="text-4xl font-bold">$600.000</span>
+                <span class="text-muted-foreground ml-2">CLP</span>
+              </div>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Plataforma web profesional y escalable</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Hasta 7 páginas personalizables</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Funcionalidades e-commerce avanzadas</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Formulario de contacto y redes integradas</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[hsl(var(--color-primary))] shrink-0 mt-0.5">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm text-muted-foreground">Acompañamiento técnico completo</span>
+                </li>
+              </ul>
+
+              <div>
+                <a href="https://wa.me/56974219332?text=Hola%20¡tengo%20un%20proyecto%20en%20mente%20y%20el%20plan%20Profesional%20creo%20que%20seria%20el%20indicado!" target="_blank" class="h-14 rounded-xl bg-[hsl(var(--color-primary)/.1)] flex items-center justify-center hover:bg-[hsl(var(--color-primary)/.2)] transition-colors text-[hsl(var(--color-primary))] font-bold focus-ring disabled:pointer-events-none disabled:opacity-50">
+                  Iniciar Proyecto Profesional
+                </a>
+              </div>
+              
+            </article>
+          </div>
+          <p class="text-center text-muted-foreground mt-12">
+            ¿Necesitas algo diferente?
+            <a href="#contact" class="text-[hsl(var(--color-primary))]">
+              Contáctanos para un presupuesto personalizado
+            </a>
+          </p>
         </div>
       </section>
 
@@ -380,7 +638,7 @@
               </a>
               <!-- <button>Agendar Llamada</button> -->
             </div>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-8 text-muted-foreground">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-muted-foreground">
               <a href="mailto:contacto@gamesandcode.com" class="flex items-center gap-2 hover:text-[hsl(var(--color-primary))] transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-5 h-5">
                   <rect width="20" height="16" x="2" y="4" rx="2"></rect>
@@ -409,9 +667,9 @@
     </main>
 
     <footer class="py-12 border-t border-[hsl(var(--color-border))]">
-      <div class="container mx-auto flex justify-center">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div class="flex items-center gap-2 group ">
+      <div class="container mx-auto flex justify-center px-6">
+        <div class="flex flex-col items-center justify-between gap-6">
+          <a href="#home" class="group flex items-center gap-2">
             <div class="p-2 rounded-xl bg-[hsl(var(--color-primary)/.1)] group-hover:bg-[hsl(var(--color-primary)/.2)] transition duration-200 ease-hover">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml w-5 h-5 text-[hsl(var(--color-primary))]">
                 <path d="m18 16 4-4-4-4"></path>
@@ -419,13 +677,12 @@
                 <path d="m14.5 4-5 16"></path>
               </svg>
             </div>
-            <a href="#home">
-              <span class="text-lg font-outfit font-bold tracking-tight">
-                Games &
-                <span class="text-gradient">Code</span>
-              </span>
-            </a>
-          </div>
+            <span class="text-lg font-outfit font-bold tracking-tight">
+              Games &
+              <span class="text-gradient">Code</span>
+            </span>
+          </a>
+          <p class="text-muted-foreground text-sm">© 2025 Games & Code. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
