@@ -77,3 +77,26 @@ if (scrollIndicator) {
 
   window.addEventListener('scroll', handleScrollIndicator, { passive: true })
 }
+
+document.querySelectorAll('.faq-button').forEach(button => {
+  button.addEventListener('click', () => {
+    const item = button.closest('.faq-item');
+    const content = item.querySelector('.faq-content');
+    const icon = item.querySelector('.faq-icon');
+
+    const isOpen = content.style.maxHeight;
+
+    document.querySelectorAll('.faq-content').forEach(c => {
+      c.style.maxHeight = null;
+    });
+
+    document.querySelectorAll('.faq-icon').forEach(i => {
+      i.classList.remove('rotate-180');
+    });
+
+    if (!isOpen) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+      icon.classList.add('rotate-180');
+    }
+  });
+});
