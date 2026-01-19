@@ -263,9 +263,6 @@
   .z-10 {
     z-index: 10;
   }
-  .z-11 {
-    z-index: 11;
-  }
   .z-50 {
     z-index: 50;
   }
@@ -431,9 +428,6 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
-  .flex-1 {
-    flex: 1;
-  }
   .shrink-0 {
     flex-shrink: 0;
   }
@@ -546,10 +540,6 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -558,23 +548,14 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
-  .border-\[hsl\(var\(--color-border\)\)\/\.5\] {
-    border-color: hsl(var(--color-border))/.5;
-  }
   .border-\[hsl\(var\(--color-border\)\)\] {
     border-color: hsl(var(--color-border));
-  }
-  .border-\[hsl\(var\(--color-border\)\/\.5\)\] {
-    border-color: hsl(var(--color-border)/.5);
   }
   .border-\[hsl\(var\(--color-primary\)\/\.3\)\] {
     border-color: hsl(var(--color-primary)/.3);
   }
   .bg-\[hsl\(var\(--color-bg-body\)\)\] {
     background-color: hsl(var(--color-bg-body));
-  }
-  .bg-\[hsl\(var\(--color-card\)\/\.5\)\] {
-    background-color: hsl(var(--color-card)/.5);
   }
   .bg-\[hsl\(var\(--color-glow-primary\)\/\.05\)\] {
     background-color: hsl(var(--color-glow-primary)/.05);
@@ -643,9 +624,6 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
-  .py-24 {
-    padding-block: calc(var(--spacing) * 24);
-  }
   .pt-0 {
     padding-top: calc(var(--spacing) * 0);
   }
@@ -682,10 +660,6 @@
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
-  .text-base {
-    font-size: var(--text-base);
-    line-height: var(--tw-leading, var(--text-base--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);
@@ -733,9 +707,6 @@
   }
   .whitespace-nowrap {
     white-space: nowrap;
-  }
-  .text-\[17\] {
-    color: 17;
   }
   .text-\[hsl\(var\(--color-bg\)\)\] {
     color: hsl(var(--color-bg));
@@ -877,13 +848,6 @@
       }
     }
   }
-  .hover\:no-underline {
-    &:hover {
-      @media (hover: hover) {
-        text-decoration-line: none;
-      }
-    }
-  }
   .disabled\:pointer-events-none {
     &:disabled {
       pointer-events: none;
@@ -892,11 +856,6 @@
   .disabled\:opacity-50 {
     &:disabled {
       opacity: 50%;
-    }
-  }
-  .data-\[state\=open\]\:border-\[hsl\(var\(--color-primary\)\/\.3\)\] {
-    &[data-state="open"] {
-      border-color: hsl(var(--color-primary)/.3);
     }
   }
   .md\:col-span-2 {
